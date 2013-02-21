@@ -1,0 +1,23 @@
+[
+  {
+    "settings": [ "master" ],
+    "specs": {
+      "frame": {
+        "type": "FrameMojit",
+        "config": {
+          "children": {
+            "header": {
+              "type": "HeaderMojit"
+            },
+            "body": {
+              "type": "BodyMojit"
+            },
+            "footer": {
+              "type": "FooterMojit"
+            }
+          }
+        }
+      }
+    }
+  }
+]
