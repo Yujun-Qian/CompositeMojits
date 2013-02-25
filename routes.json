@@ -9,7 +9,8 @@
     "header": {
       "verbs": ["get"],
       "path": "/header",
-      "call": "header.index"
+      "call": "header.index",
+      "params": "header"
     },
     "body": {
       "verbs": ["get"],
@@ -20,6 +21,12 @@
       "verbs": ["get"],
       "path": "/footer",
       "call": "footer.index"
+    },
+
+    "any mojit/action": {
+        "verbs": [ "GET" ],
+        "path": "/:module/:action",
+        "call": "{module}.{action}"
     }
   }
 ]
