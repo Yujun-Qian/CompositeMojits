@@ -20,6 +20,7 @@ YUI.add('FrameMojit', function(Y, NAME) {
     	
         //actionContext.composite.done({title: "Parent Frame"});
     	actionContext.composite.execute(cfg, function(data, meta) {
+    		data = Y.merge(data, {title: "Parent Frame"});
     		actionContext.done(data, meta);
     	});
     }
